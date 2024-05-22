@@ -54,11 +54,29 @@ Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e 
 
     - for( const key in members[i]){
         console.log(members[i].key);
-    }
-   }
+   
 
 MILESTONE 2:
 Stampare le stesse informazioni su DOM sottoforma di stringhe
+
+4) creo un elemento per collegarlo alla section creata nel file css:
+   
+   - const cardsEl = document.querySelector('section#cards);
+
+5) creo un elemento per ogni card dei membri:
+
+   - const membersCardsEl = document.createElement('article');
+
+6) collego l'elemento ad una classe creata con css (members-cards):
+
+    -  membersCardsEl.classList.add('members-cards');  
+    - membersCardsEl.append(members[i].key) 
+    }
+
+   - cardsEl.appendChild(membersCardsEl); 
+  }
+
+
 BONUS 1:
 Trasformare la stringa foto in una immagine effettiva
 BONUS 2:

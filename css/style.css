@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+}
+
+
+section#cards{
+    display: flex;
+    flex-wrap: wrap;
+    height: 1000px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+section#cards> article.members-cards{
+    height: calc(100% / 3);
+    width: calc(100% / 3);
+}
